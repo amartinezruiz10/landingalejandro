@@ -12,7 +12,7 @@ const Pregunta1 = () => {
   
     return (
       <div className="flex flex-col">
-        <div className="flex flex-row bg-[#262626] px-4 py-2 gap-2">
+        <div className="flex flex-row bg-[#262626] px-4 py-2 gap-2 sm:flex sm:flex-row sm:justify-between">
           <div className="flex flex-row gap-4">
             <p className="font-saaseriesb font-normal text-[18px] leading-[22px] tracking-[1px] uppercase text-[#fff]">
               1.

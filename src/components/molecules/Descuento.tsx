@@ -4,9 +4,10 @@ import TagPromo from "../atoms/TagPromo";
 
 function Descuento() {
     return(
-        <div className="relative flex justify-center px-4 pt-4">
+        <div className="relative flex justify-center px-4 pt-4 sm:p-0">
             <TagPromo/>
-            <Image src="/images/EstrellaGalicia.png" alt="Ejemplo" width={113} height={243}/>
+            <Image className="sm:hidden" src="/images/EstrellaGalicia.png" alt="Ejemplo" width={113} height={243}/>
+            <Image className="hidden sm:flex" src="/images/EstrellaPc.png" alt="Ejemplo" width={470} height={416}/>
         </div> 
     )
 }

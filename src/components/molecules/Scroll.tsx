@@ -1,15 +1,10 @@
 import React from "react";
-import Barra1 from "../atoms/Barras/Barra1";
-import Barra2 from "../atoms/Barras/Barra2";
 import Cervezas from "../atoms/Cervezas";
 
 function Scroll(){
     return(
         <div>
-            <Barra1/>
             <Cervezas/>
-            <Barra2/>
-
         </div>
     )
 }

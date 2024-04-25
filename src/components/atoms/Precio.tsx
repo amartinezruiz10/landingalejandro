@@ -2,16 +2,42 @@ import React from "react";
 
 function Precio(){
     return(
-        <div className="flex flex-row justify-between">
-            <div className="flex flex-row gap-2 items-center">
-                <p className="font-normal font-saaseriesb text-[36px] leading-[42px] tracking-[1px] text-[#262626] ">15.99€</p>
-                <svg width="2" height="47" viewBox="0 0 2 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <line x1="1" y1="0.87207" x2="0.999998" y2="45.8721" stroke="#262626" stroke-linecap="round"/>
-                </svg>
-                <p className="uppercase font-normal font-saaseriesc text-[12px] leading-[14px] tracking-[1px] text-[#6E6762]">iva incl.</p>
+        <div className="flex flex-row justify-between sm:flex sm:flex-col sm:gap-6">
+            <div className="flex flex-row gap-2 items-center sm:flex sm:flex-row sm:justify-between">
+                <div className="flex flex-row gap-2 items-center sm:flex sm:flex-row sm:gap-2 sm:items-center">
+                    <p className="font-normal font-saaseriesb text-[36px] leading-[42px] tracking-[1px] text-[#262626] ">15.99€</p>
+                    <svg width="2" height="47" viewBox="0 0 2 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="1" y1="0.87207" x2="0.999998" y2="45.8721" stroke="#262626" stroke-linecap="round"/>
+                    </svg>
+                    <div className="sm:flex sm:flex-col sm:gap-1">
+                        <p className="hidden uppercase font-normal font-saaseriesc text-[12px] leading-[14px] tracking-[1px] text-[#6E6762] sm:flex">2,45€/L</p>
+                        <p className="uppercase font-normal font-saaseriesc text-[12px] leading-[14px] tracking-[1px] text-[#6E6762]">iva incl.</p>
+                    </div>
+                </div>
+                <div className="hidden sm:flex sm:flex-row sm:gap-8">
+                    <button className="flex flex-row items-center gap-[6px] font-redhat font-medium text-[14px] lading-5 text-[#6E6762] border border-negro rounded-[2px] p-4  ">6 <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.49999 8.78145L11.8 5.48145L12.7427 6.42411L8.49999 10.6668L4.25732 6.42411L5.19999 5.48145L8.49999 8.78145Z" fill="#F68217"/></svg></button>
+                    <div className="py-1 flex items-center">
+                        <button className="flex flex-row items-center gap-4 font-saaseriesc font-normal text-[14px] leading-4 tracking-[1.4px] text-[#F8F7F4] bg-negro rounded-[50px] py-3 pl-10 pr-8">AÑADIR <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.99992 1.3335C9.06078 1.3335 10.0782 1.75492 10.8283 2.50507C11.5785 3.25521 11.9999 4.27263 11.9999 5.3335V6.00016H14.6666V7.3335H13.8886L13.3839 13.3888C13.37 13.5554 13.2941 13.7107 13.1711 13.8239C13.0481 13.9372 12.8871 14.0001 12.7199 14.0002H3.27992C3.11275 14.0001 2.95172 13.9372 2.82873 13.8239C2.70575 13.7107 2.62979 13.5554 2.61592 13.3888L2.11059 7.3335H1.33325V6.00016H3.99992V5.3335C3.99992 4.27263 4.42135 3.25521 5.17149 2.50507C5.92164 1.75492 6.93905 1.3335 7.99992 1.3335ZM12.5506 7.3335H3.44859L3.89325 12.6668H12.1059L12.5506 7.3335ZM8.66659 8.66683V11.3335H7.33325V8.66683H8.66659ZM5.99992 8.66683V11.3335H4.66659V8.66683H5.99992ZM11.3333 8.66683V11.3335H9.99992V8.66683H11.3333ZM7.99992 2.66683C7.31576 2.66683 6.65777 2.92979 6.16204 3.40131C5.66632 3.87284 5.37079 4.51686 5.33659 5.20016L5.33325 5.3335V6.00016H10.6666V5.3335C10.6666 4.64933 10.4036 3.99134 9.9321 3.49562C9.46058 2.9999 8.81656 2.70437 8.13325 2.67016L7.99992 2.66683Z" fill="#F8F7F4"/></svg></button>
+                    </div>
+              </div>
             </div>
-            <div className="flex flex-row gap-2 items-center">
-                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div className="flex flex-row gap-2 items-center sm:flex sm:flex-row sm:gap-3">
+                <div className="hidden sm:flex sm:flex-row sm:items-center sm:gap-1">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_18557_4664)">
+<path d="M10.9333 14.1856L7.43417 12.2773C6.97734 12.7656 6.38416 13.1053 5.73174 13.2522C5.07931 13.399 4.3978 13.3462 3.77578 13.1006C3.15375 12.8551 2.61998 12.4281 2.24382 11.8751C1.86765 11.3222 1.6665 10.6689 1.6665 10.0002C1.6665 9.33143 1.86765 8.67815 2.24382 8.12523C2.61998 7.5723 3.15375 7.14531 3.77578 6.89973C4.3978 6.65415 5.07931 6.60135 5.73174 6.74819C6.38416 6.89503 6.97734 7.23471 7.43417 7.7231L10.9342 5.81476C10.7355 5.02816 10.8305 4.19609 11.2014 3.47451C11.5723 2.75294 12.1936 2.19141 12.9489 1.89518C13.7042 1.59895 14.5416 1.58835 15.3042 1.86537C16.0667 2.1424 16.7021 2.68803 17.0911 3.39998C17.4801 4.11193 17.5962 4.94134 17.4174 5.73272C17.2387 6.5241 16.7775 7.22313 16.1202 7.69877C15.4629 8.17442 14.6548 8.39402 13.8472 8.31642C13.0396 8.23883 12.288 7.86936 11.7333 7.27726L8.23334 9.1856C8.36768 9.72006 8.36768 10.2795 8.23334 10.8139L11.7325 12.7223C12.2872 12.1302 13.0387 11.7607 13.8463 11.6831C14.6539 11.6055 15.4621 11.8251 16.1194 12.3008C16.7766 12.7764 17.2379 13.4754 17.4166 14.2668C17.5953 15.0582 17.4793 15.8876 17.0903 16.5995C16.7012 17.3115 16.0659 17.8571 15.3033 18.1342C14.5408 18.4112 13.7034 18.4006 12.9481 18.1043C12.1928 17.8081 11.5714 17.2466 11.2005 16.525C10.8296 15.8034 10.7346 14.9714 10.9333 14.1848V14.1856ZM5.00001 11.6664C5.44204 11.6664 5.86596 11.4908 6.17852 11.1783C6.49108 10.8657 6.66668 10.4418 6.66668 9.99976C6.66668 9.55774 6.49108 9.13381 6.17852 8.82125C5.86596 8.50869 5.44204 8.3331 5.00001 8.3331C4.55798 8.3331 4.13406 8.50869 3.8215 8.82125C3.50894 9.13381 3.33334 9.55774 3.33334 9.99976C3.33334 10.4418 3.50894 10.8657 3.8215 11.1783C4.13406 11.4908 4.55798 11.6664 5.00001 11.6664ZM14.1667 6.66643C14.6087 6.66643 15.0326 6.49084 15.3452 6.17827C15.6577 5.86571 15.8333 5.44179 15.8333 4.99976C15.8333 4.55774 15.6577 4.13381 15.3452 3.82125C15.0326 3.50869 14.6087 3.3331 14.1667 3.3331C13.7246 3.3331 13.3007 3.50869 12.9882 3.82125C12.6756 4.13381 12.5 4.55774 12.5 4.99976C12.5 5.44179 12.6756 5.86571 12.9882 6.17827C13.3007 6.49084 13.7246 6.66643 14.1667 6.66643ZM14.1667 16.6664C14.6087 16.6664 15.0326 16.4908 15.3452 16.1783C15.6577 15.8657 15.8333 15.4418 15.8333 14.9998C15.8333 14.5577 15.6577 14.1338 15.3452 13.8213C15.0326 13.5087 14.6087 13.3331 14.1667 13.3331C13.7246 13.3331 13.3007 13.5087 12.9882 13.8213C12.6756 14.1338 12.5 14.5577 12.5 14.9998C12.5 15.4418 12.6756 15.8657 12.9882 16.1783C13.3007 16.4908 13.7246 16.6664 14.1667 16.6664Z" fill="#262626"/>
+</g>
+<defs>
+<clipPath id="clip0_18557_4664">
+<rect width="20" height="20" fill="white"/>
+</clipPath>
+</defs>
+                    </svg>
+                    <p className="font-saaseriesb font-normal text-[13px] leading-3 text-[#262626] uppercase ">COMPÁRTELO</p>
+                </div>
+                <div className="flex flex-row gap-2 items-center sm:flex sm:flex-row sm:items-center sm:gap-1">
+                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_18455_2881)">
 <path d="M14.25 2.87207C16.7816 2.87207 18.8333 4.9554 18.8333 7.87207C18.8333 13.7054 12.5833 17.0387 10.5 18.2887C8.41663 17.0387 2.16663 13.7054 2.16663 7.87207C2.16663 4.9554 4.24996 2.87207 6.74996 2.87207C8.29996 2.87207 9.66663 3.7054 10.5 4.53874C11.3333 3.7054 12.7 2.87207 14.25 2.87207ZM11.2783 15.8754C12.0125 15.4121 12.675 14.9512 13.295 14.4579C15.7791 12.4829 17.1666 10.3246 17.1666 7.87207C17.1666 5.9054 15.8858 4.53874 14.25 4.53874C13.3533 4.53874 12.3833 5.01374 11.6783 5.71707L10.5 6.8954L9.32163 5.71707C8.61663 5.01374 7.64663 4.53874 6.74996 4.53874C5.13329 4.53874 3.83329 5.91874 3.83329 7.87207C3.83329 10.3254 5.22163 12.4829 7.70413 14.4579C8.32496 14.9512 8.98746 15.4121 9.72163 15.8746C9.97079 16.0321 10.2175 16.1829 10.5 16.3512C10.7825 16.1829 11.0291 16.0321 11.2783 15.8754Z" fill="#262626"/>
 </g>
@@ -20,9 +46,12 @@ function Precio(){
 <rect width="20" height="20" fill="white" transform="translate(0.5 0.37207)"/>
 </clipPath>
 </defs>
-                </svg>
-                <p className="font-saaseriesb font-normal text-[13px] leading-3 text-[#262626] uppercase ">añadir a favoritos</p>
-            </div>
+                    </svg>
+                    <p className="font-saaseriesb font-normal text-[13px] leading-3 text-[#262626] uppercase ">añadir a favoritos</p>
+                </div>
+           </div>
+           <p className="hidden font-medium font-redhat text-[12px] leading-[16px] tracking-[0.3px] text-[#A3988F] sm:flex ">Las imágenes del envase pueden no coincidir con el producto recibido</p>
+
         </div>
     )
 }

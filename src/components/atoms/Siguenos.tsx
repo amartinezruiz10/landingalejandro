@@ -2,9 +2,9 @@ import React from "react";
 
 function Siguenos(){
     return(
-        <div className="flex flex-row gap-2 justify-start items-center">
+        <div className="flex flex-row gap-2 justify-start items-center sm:hidden">
             <p className="font-saaseriesb font-normal text-[19px] leading-[19px] text-[#262626] uppercase items-center">síguenos</p>
-            <div className="flex flex-row items-center">
+            <div className="flex flex-row items-center gap-1">
                 <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_18516_4202)">
 <path d="M14 19.2021H19V5.20215H5V19.2021H12V14.2021H10V12.2021H12V10.5481C12 9.21115 12.14 8.72615 12.4 8.23715C12.6561 7.75333 13.052 7.35784 13.536 7.10215C13.918 6.89715 14.393 6.77415 15.223 6.72115C15.552 6.70015 15.978 6.72615 16.501 6.80115V8.70115H16C15.083 8.70115 14.704 8.74415 14.478 8.86515C14.3431 8.93451 14.2334 9.0443 14.164 9.17915C14.044 9.40515 14 9.62915 14 10.5471V12.2021H16.5L16 14.2021H14V19.2021ZM4 3.20215H20C20.2652 3.20215 20.5196 3.30751 20.7071 3.49504C20.8946 3.68258 21 3.93693 21 4.20215V20.2021C21 20.4674 20.8946 20.7217 20.7071 20.9093C20.5196 21.0968 20.2652 21.2021 20 21.2021H4C3.73478 21.2021 3.48043 21.0968 3.29289 20.9093C3.10536 20.7217 3 20.4674 3 20.2021V4.20215C3 3.93693 3.10536 3.68258 3.29289 3.49504C3.48043 3.30751 3.73478 3.20215 4 3.20215Z" fill="#262626"/>

@@ -15,13 +15,13 @@ const PackQuantity = () => {
     };
 
     return (
-        <div className="relative">
+        <div className="relative w-1/2">
             <button
                 className="font-saaseriesc flex flex-row justify-between w-full bg-[#000000] text-[#fff] px-[49.75px] py-[19px] text-[12px] leading-[14px] tracking-[1px] items-center font-normal"
                 onClick={toggleMenuVisibility}
             >
                 CANTIDAD: {quantity}
-                <svg
+                <svg 
                     width="17"
                     height="16"
                     viewBox="0 0 17 16"

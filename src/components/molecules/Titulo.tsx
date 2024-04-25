@@ -4,7 +4,7 @@ import Logo from "../atoms/Logo";
 
 function Titulo() {
     return(
-        <div className="flex flex-row gap-4 py-[6px]">
+        <div className="flex flex-row gap-4 py-[6px] md:hidden">
             <Hamburguesa/>
             <Logo/>
         </div> 
